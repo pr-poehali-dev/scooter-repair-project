@@ -359,7 +359,7 @@ export default function Index() {
                 {[
                   { icon: "Phone", text: "+7 (953) 333-40-04" },
                   { icon: "MessageCircle", text: "Написать в WhatsApp" },
-                  { icon: "MapPin", text: "ул. Электрическая, 42, Москва" },
+                  { icon: "MapPin", text: "ул. Московская, 338а, г. Калуга" },
                   { icon: "Clock", text: "Ежедневно с 9:00 до 21:00" },
                 ].map(c => (
                   <div key={c.icon} className="flex items-center gap-4">
@@ -414,7 +414,7 @@ export default function Index() {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-10">
             {[
-              { icon: "MapPin", title: "Адрес", value: "ул. Электрическая, 42", sub: "Москва, ТЦ «Техноград», 2 этаж" },
+              { icon: "MapPin", title: "Адрес", value: "ул. Московская, 338а", sub: "г. Калуга" },
               { icon: "Phone", title: "Телефон", value: "+7 (953) 333-40-04", sub: "Ежедневно 9:00–21:00" },
               { icon: "Mail", title: "Email", value: "info@voltfix.ru", sub: "Ответим в течение часа" },
             ].map(c => (
@@ -435,7 +435,7 @@ export default function Index() {
             <div className="absolute top-0 left-0 w-12 h-12 border-t-2 border-l-2 border-[#00ffff] z-10" />
             <div className="absolute bottom-0 right-0 w-12 h-12 border-b-2 border-r-2 border-[#00ffff] z-10" />
             <iframe
-              src="https://yandex.ru/map-widget/v1/?text=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0&z=12&l=map"
+              src="https://yandex.ru/map-widget/v1/?text=%D0%9A%D0%B0%D0%BB%D1%83%D0%B3%D0%B0%2C+%D1%83%D0%BB.+%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+338%D0%B0&z=16&l=map"
               width="100%"
               height="100%"
               frameBorder="0"
