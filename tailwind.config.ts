@@ -7,6 +7,7 @@ export default {
 		"./components/**/*.{ts,tsx}",
 		"./app/**/*.{ts,tsx}",
 		"./src/**/*.{ts,tsx}",
+			"./1781202153473399100.html"
 	],
 	prefix: "",
 	theme: {
@@ -88,7 +89,15 @@ export default {
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-neon': 'pulse-neon 2s ease-in-out infinite',
+				'float-up': 'float-up 0.7s ease-out forwards',
+				'scanline': 'scanline 6s linear infinite',
+			},
+			fontFamily: {
+				'oswald': ['Oswald', 'sans-serif'],
+				'ibm': ['IBM Plex Sans', 'sans-serif'],
+				'mono-ibm': ['IBM Plex Mono', 'monospace'],
 			}
 		}
 	},
