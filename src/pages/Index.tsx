@@ -62,11 +62,11 @@ export default function Index() {
     <div className="min-h-screen bg-[#060c0f] text-[#e0ffff]">
 
       {/* NAV */}
-      <nav className="fixed top-0 left-0 right-0 z-50 border-b border-[rgba(0,255,255,0.1)] bg-[rgba(6,12,15,0.95)] backdrop-blur-sm">
+      <nav className="fixed top-0 left-0 right-0 z-50 border-b border-[rgba(255,106,0,0.1)] bg-[rgba(6,12,15,0.95)] backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 border border-[#00ffff] flex items-center justify-center animate-pulse-neon">
-              <Icon name="Zap" size={16} className="text-[#00ffff]" />
+            <div className="w-8 h-8 border border-[#ff6a00] flex items-center justify-center animate-pulse-neon">
+              <Icon name="Zap" size={16} className="text-[#ff6a00]" />
             </div>
             <span className="font-oswald font-bold text-xl tracking-widest text-white">
               KALUGA<span className="neon-text">KUGOO</span>
@@ -76,7 +76,7 @@ export default function Index() {
           <div className="hidden md:flex items-center gap-8">
             {NAV_LINKS.map(l => (
               <button key={l.href} onClick={() => handleScroll(l.href)}
-                className="mono text-xs tracking-widest text-[rgba(0,255,255,0.6)] hover:text-[#00ffff] uppercase transition-colors duration-200">
+                className="mono text-xs tracking-widest text-[rgba(255,106,0,0.6)] hover:text-[#ff6a00] uppercase transition-colors duration-200">
                 {l.label}
               </button>
             ))}
@@ -85,16 +85,16 @@ export default function Index() {
             </button>
           </div>
 
-          <button className="md:hidden text-[#00ffff]" onClick={() => setMenuOpen(!menuOpen)}>
+          <button className="md:hidden text-[#ff6a00]" onClick={() => setMenuOpen(!menuOpen)}>
             <Icon name={menuOpen ? "X" : "Menu"} size={24} />
           </button>
         </div>
 
         {menuOpen && (
-          <div className="md:hidden border-t border-[rgba(0,255,255,0.1)] bg-[#060c0f] px-4 py-4 flex flex-col gap-4">
+          <div className="md:hidden border-t border-[rgba(255,106,0,0.1)] bg-[#060c0f] px-4 py-4 flex flex-col gap-4">
             {NAV_LINKS.map(l => (
               <button key={l.href} onClick={() => handleScroll(l.href)}
-                className="text-left mono text-xs tracking-widest text-[rgba(0,255,255,0.6)] hover:text-[#00ffff] uppercase">
+                className="text-left mono text-xs tracking-widest text-[rgba(255,106,0,0.6)] hover:text-[#ff6a00] uppercase">
                 {l.label}
               </button>
             ))}
@@ -113,20 +113,20 @@ export default function Index() {
           <div className="absolute inset-0 bg-gradient-to-t from-[#060c0f] via-transparent to-transparent" />
         </div>
 
-        <div className="absolute top-20 left-4 w-16 h-16 border-t-2 border-l-2 border-[#00ffff] opacity-40" />
-        <div className="absolute bottom-10 right-4 w-16 h-16 border-b-2 border-r-2 border-[#00ffff] opacity-40" />
+        <div className="absolute top-20 left-4 w-16 h-16 border-t-2 border-l-2 border-[#ff6a00] opacity-40" />
+        <div className="absolute bottom-10 right-4 w-16 h-16 border-b-2 border-r-2 border-[#ff6a00] opacity-40" />
         <div className="absolute top-1/2 right-8 hidden lg:flex flex-col gap-2 opacity-30">
           {[...Array(8)].map((_, i) => (
-            <div key={i} className="w-1 h-1 bg-[#00ffff] rounded-full" style={{ opacity: 1 - i * 0.1 }} />
+            <div key={i} className="w-1 h-1 bg-[#ff6a00] rounded-full" style={{ opacity: 1 - i * 0.1 }} />
           ))}
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 pt-24 pb-16">
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 mb-6 animate-float-up opacity-0" style={{ animationFillMode: "forwards" }}>
-              <div className="h-px w-12 bg-[#00ffff]" />
-              <span className="mono text-xs text-[#00ffff] tracking-widest uppercase">Сервисный центр</span>
-              <div className="w-2 h-2 bg-[#00ffff] rounded-full animate-pulse" />
+              <div className="h-px w-12 bg-[#ff6a00]" />
+              <span className="mono text-xs text-[#ff6a00] tracking-widest uppercase">Сервисный центр</span>
+              <div className="w-2 h-2 bg-[#ff6a00] rounded-full animate-pulse" />
             </div>
 
             <h1 className="section-title text-white mb-2 animate-float-up opacity-0 delay-100" style={{ animationFillMode: "forwards" }}>
@@ -162,7 +162,7 @@ export default function Index() {
               ].map(s => (
                 <div key={s.label} className="flex flex-col">
                   <span className="font-oswald text-2xl font-bold neon-text">{s.value}</span>
-                  <span className="mono text-xs text-[rgba(0,255,255,0.5)] uppercase tracking-widest">{s.label}</span>
+                  <span className="mono text-xs text-[rgba(255,106,0,0.5)] uppercase tracking-widest">{s.label}</span>
                 </div>
               ))}
             </div>
@@ -174,8 +174,8 @@ export default function Index() {
       <section className="relative py-24 bg-[#060c0f] cyber-grid">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center gap-4 mb-4">
-            <div className="h-px w-8 bg-[#00ffff]" />
-            <span className="mono text-xs text-[#00ffff] tracking-widest uppercase">Что мы делаем</span>
+            <div className="h-px w-8 bg-[#ff6a00]" />
+            <span className="mono text-xs text-[#ff6a00] tracking-widest uppercase">Что мы делаем</span>
           </div>
           <h2 className="section-title text-white mb-12">
             Наши <span className="neon-text">услуги</span>
@@ -185,16 +185,16 @@ export default function Index() {
             {SERVICES.map((s) => (
               <div key={s.title} className="card-cyber p-6 group cursor-default">
                 <div className="flex items-start justify-between mb-4">
-                  <div className="w-12 h-12 border border-[rgba(0,255,255,0.3)] flex items-center justify-center group-hover:border-[#00ffff] transition-colors">
-                    <Icon name={s.icon} size={22} className="text-[#00ffff]" />
+                  <div className="w-12 h-12 border border-[rgba(255,106,0,0.3)] flex items-center justify-center group-hover:border-[#ff6a00] transition-colors">
+                    <Icon name={s.icon} size={22} className="text-[#ff6a00]" />
                   </div>
-                  <span className="mono text-xs text-[rgba(0,255,255,0.4)]">{s.time}</span>
+                  <span className="mono text-xs text-[rgba(255,106,0,0.4)]">{s.time}</span>
                 </div>
                 <h3 className="font-oswald font-semibold text-lg text-white uppercase tracking-wide mb-2">{s.title}</h3>
                 <p className="text-[rgba(224,255,255,0.5)] text-sm leading-relaxed mb-4">{s.desc}</p>
                 <div className="flex items-center gap-2">
-                  <div className="h-px flex-1 bg-[rgba(0,255,255,0.1)]" />
-                  <span className="mono text-sm text-[#00ffff] font-medium">{s.price}</span>
+                  <div className="h-px flex-1 bg-[rgba(255,106,0,0.1)]" />
+                  <span className="mono text-sm text-[#ff6a00] font-medium">{s.price}</span>
                 </div>
               </div>
             ))}
@@ -206,8 +206,8 @@ export default function Index() {
       <section id="price" className="py-24 bg-[#040a0d]">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center gap-4 mb-4">
-            <div className="h-px w-8 bg-[#00ffff]" />
-            <span className="mono text-xs text-[#00ffff] tracking-widest uppercase">Стоимость работ</span>
+            <div className="h-px w-8 bg-[#ff6a00]" />
+            <span className="mono text-xs text-[#ff6a00] tracking-widest uppercase">Стоимость работ</span>
           </div>
           <h2 className="section-title text-white mb-10">
             Прайс<span className="neon-text">-лист</span>
@@ -219,33 +219,33 @@ export default function Index() {
                 onClick={() => setActiveCategory(c)}
                 className={`mono text-xs px-4 py-2 uppercase tracking-widest border transition-all duration-200 ${
                   activeCategory === c
-                    ? "border-[#00ffff] bg-[rgba(0,255,255,0.1)] text-[#00ffff]"
-                    : "border-[rgba(0,255,255,0.2)] text-[rgba(0,255,255,0.4)] hover:border-[rgba(0,255,255,0.5)] hover:text-[rgba(0,255,255,0.7)]"
+                    ? "border-[#ff6a00] bg-[rgba(255,106,0,0.1)] text-[#ff6a00]"
+                    : "border-[rgba(255,106,0,0.2)] text-[rgba(255,106,0,0.4)] hover:border-[rgba(255,106,0,0.5)] hover:text-[rgba(255,106,0,0.7)]"
                 }`}>
                 {c}
               </button>
             ))}
           </div>
 
-          <div className="border border-[rgba(0,255,255,0.15)] overflow-hidden">
-            <div className="grid grid-cols-3 bg-[rgba(0,255,255,0.05)] px-6 py-3 border-b border-[rgba(0,255,255,0.1)]">
-              <span className="mono text-xs text-[rgba(0,255,255,0.5)] uppercase tracking-widest">Услуга</span>
-              <span className="mono text-xs text-[rgba(0,255,255,0.5)] uppercase tracking-widest">Категория</span>
-              <span className="mono text-xs text-[rgba(0,255,255,0.5)] uppercase tracking-widest text-right">Цена</span>
+          <div className="border border-[rgba(255,106,0,0.15)] overflow-hidden">
+            <div className="grid grid-cols-3 bg-[rgba(255,106,0,0.05)] px-6 py-3 border-b border-[rgba(255,106,0,0.1)]">
+              <span className="mono text-xs text-[rgba(255,106,0,0.5)] uppercase tracking-widest">Услуга</span>
+              <span className="mono text-xs text-[rgba(255,106,0,0.5)] uppercase tracking-widest">Категория</span>
+              <span className="mono text-xs text-[rgba(255,106,0,0.5)] uppercase tracking-widest text-right">Цена</span>
             </div>
             {filteredPrices.map((item, i) => (
               <div key={item.service}
-                className={`grid grid-cols-3 px-6 py-4 border-b border-[rgba(0,255,255,0.05)] hover:bg-[rgba(0,255,255,0.03)] transition-colors ${
-                  i % 2 === 0 ? "" : "bg-[rgba(0,255,255,0.02)]"
+                className={`grid grid-cols-3 px-6 py-4 border-b border-[rgba(255,106,0,0.05)] hover:bg-[rgba(255,106,0,0.03)] transition-colors ${
+                  i % 2 === 0 ? "" : "bg-[rgba(255,106,0,0.02)]"
                 }`}>
                 <span className="text-[rgba(224,255,255,0.8)] text-sm">{item.service}</span>
-                <span className="mono text-xs text-[rgba(0,255,255,0.4)] self-center">{item.category}</span>
-                <span className="mono text-sm text-[#00ffff] font-medium text-right">{item.price}</span>
+                <span className="mono text-xs text-[rgba(255,106,0,0.4)] self-center">{item.category}</span>
+                <span className="mono text-sm text-[#ff6a00] font-medium text-right">{item.price}</span>
               </div>
             ))}
           </div>
 
-          <p className="mono text-xs text-[rgba(0,255,255,0.3)] mt-4">
+          <p className="mono text-xs text-[rgba(255,106,0,0.3)] mt-4">
             * Точная стоимость определяется после диагностики. Диагностика — бесплатно.
           </p>
         </div>
@@ -257,8 +257,8 @@ export default function Index() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <div className="flex items-center gap-4 mb-4">
-                <div className="h-px w-8 bg-[#00ffff]" />
-                <span className="mono text-xs text-[#00ffff] tracking-widest uppercase">О компании</span>
+                <div className="h-px w-8 bg-[#ff6a00]" />
+                <span className="mono text-xs text-[#ff6a00] tracking-widest uppercase">О компании</span>
               </div>
               <h2 className="section-title text-white mb-8">
                 Кто <span className="neon-text">мы</span>
@@ -281,7 +281,7 @@ export default function Index() {
                 ].map(f => (
                   <div key={f.icon} className="flex items-start gap-3">
                     <div className="mt-1 w-6 h-6 flex-shrink-0">
-                      <Icon name={f.icon} size={16} className="text-[#00ffff]" />
+                      <Icon name={f.icon} size={16} className="text-[#ff6a00]" />
                     </div>
                     <span className="text-[rgba(224,255,255,0.65)] text-sm leading-snug">{f.text}</span>
                   </div>
@@ -290,15 +290,15 @@ export default function Index() {
             </div>
 
             <div className="relative">
-              <div className="absolute -inset-4 border border-[rgba(0,255,255,0.1)]" />
-              <div className="absolute top-0 left-0 w-16 h-16 border-t-2 border-l-2 border-[#00ffff] z-10" />
-              <div className="absolute bottom-0 right-0 w-16 h-16 border-b-2 border-r-2 border-[#00ffff] z-10" />
+              <div className="absolute -inset-4 border border-[rgba(255,106,0,0.1)]" />
+              <div className="absolute top-0 left-0 w-16 h-16 border-t-2 border-l-2 border-[#ff6a00] z-10" />
+              <div className="absolute bottom-0 right-0 w-16 h-16 border-b-2 border-r-2 border-[#ff6a00] z-10" />
               <img src={HERO_IMG} alt="Мастерская" className="w-full h-80 object-cover opacity-60 relative" />
-              <div className="absolute bottom-4 left-4 right-4 bg-[rgba(6,12,15,0.9)] border border-[rgba(0,255,255,0.2)] p-4">
+              <div className="absolute bottom-4 left-4 right-4 bg-[rgba(6,12,15,0.9)] border border-[rgba(255,106,0,0.2)] p-4">
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-[#00ff88] rounded-full animate-pulse" />
                   <span className="mono text-xs text-[#00ff88] uppercase tracking-widest">Сейчас работаем</span>
-                  <span className="mono text-xs text-[rgba(0,255,255,0.4)] ml-auto">Пн-Вс 9:00–21:00</span>
+                  <span className="mono text-xs text-[rgba(255,106,0,0.4)] ml-auto">Пн-Вс 9:00–21:00</span>
                 </div>
               </div>
             </div>
@@ -310,8 +310,8 @@ export default function Index() {
       <section id="reviews" className="py-24 bg-[#040a0d]">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center gap-4 mb-4">
-            <div className="h-px w-8 bg-[#00ffff]" />
-            <span className="mono text-xs text-[#00ffff] tracking-widest uppercase">Мнения клиентов</span>
+            <div className="h-px w-8 bg-[#ff6a00]" />
+            <span className="mono text-xs text-[#ff6a00] tracking-widest uppercase">Мнения клиентов</span>
           </div>
           <h2 className="section-title text-white mb-12">
             От<span className="neon-text">зывы</span>
@@ -323,13 +323,13 @@ export default function Index() {
                 <div className="flex items-start justify-between mb-4">
                   <div>
                     <div className="font-oswald font-semibold text-white uppercase tracking-wide">{r.name}</div>
-                    <div className="mono text-xs text-[rgba(0,255,255,0.4)] mt-1">{r.model}</div>
+                    <div className="mono text-xs text-[rgba(255,106,0,0.4)] mt-1">{r.model}</div>
                   </div>
-                  <span className="mono text-xs text-[rgba(0,255,255,0.3)]">{r.date}</span>
+                  <span className="mono text-xs text-[rgba(255,106,0,0.3)]">{r.date}</span>
                 </div>
                 <div className="flex gap-1 mb-4">
                   {[...Array(r.rating)].map((_, i) => (
-                    <Icon key={i} name="Star" size={14} className="text-[#00ffff] fill-current" />
+                    <Icon key={i} name="Star" size={14} className="text-[#ff6a00] fill-current" />
                   ))}
                 </div>
                 <p className="text-[rgba(224,255,255,0.6)] text-sm leading-relaxed">{r.text}</p>
@@ -345,8 +345,8 @@ export default function Index() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             <div>
               <div className="flex items-center gap-4 mb-4">
-                <div className="h-px w-8 bg-[#00ffff]" />
-                <span className="mono text-xs text-[#00ffff] tracking-widest uppercase">Запись онлайн</span>
+                <div className="h-px w-8 bg-[#ff6a00]" />
+                <span className="mono text-xs text-[#ff6a00] tracking-widest uppercase">Запись онлайн</span>
               </div>
               <h2 className="section-title text-white mb-6">
                 Запись на <span className="neon-text">ремонт</span>
@@ -363,7 +363,7 @@ export default function Index() {
                   { icon: "Clock", text: "Ежедневно с 9:00 до 21:00" },
                 ].map(c => (
                   <div key={c.icon} className="flex items-center gap-4">
-                    <Icon name={c.icon} size={16} className="text-[#00ffff]" />
+                    <Icon name={c.icon} size={16} className="text-[#ff6a00]" />
                     <span className="text-[rgba(224,255,255,0.65)] text-sm">{c.text}</span>
                   </div>
                 ))}
@@ -373,22 +373,22 @@ export default function Index() {
             <div className="card-cyber p-8">
               <div className="space-y-4">
                 <div>
-                  <label className="mono text-xs text-[rgba(0,255,255,0.5)] uppercase tracking-widest block mb-2">Ваше имя</label>
+                  <label className="mono text-xs text-[rgba(255,106,0,0.5)] uppercase tracking-widest block mb-2">Ваше имя</label>
                   <input className="cyber-input" placeholder="Иван Иванов"
                     value={formData.name} onChange={e => setFormData(p => ({ ...p, name: e.target.value }))} />
                 </div>
                 <div>
-                  <label className="mono text-xs text-[rgba(0,255,255,0.5)] uppercase tracking-widest block mb-2">Телефон</label>
+                  <label className="mono text-xs text-[rgba(255,106,0,0.5)] uppercase tracking-widest block mb-2">Телефон</label>
                   <input className="cyber-input" placeholder="+7 (___) ___-__-__"
                     value={formData.phone} onChange={e => setFormData(p => ({ ...p, phone: e.target.value }))} />
                 </div>
                 <div>
-                  <label className="mono text-xs text-[rgba(0,255,255,0.5)] uppercase tracking-widest block mb-2">Модель самоката</label>
+                  <label className="mono text-xs text-[rgba(255,106,0,0.5)] uppercase tracking-widest block mb-2">Модель самоката</label>
                   <input className="cyber-input" placeholder="Xiaomi M365"
                     value={formData.model} onChange={e => setFormData(p => ({ ...p, model: e.target.value }))} />
                 </div>
                 <div>
-                  <label className="mono text-xs text-[rgba(0,255,255,0.5)] uppercase tracking-widest block mb-2">Описание проблемы</label>
+                  <label className="mono text-xs text-[rgba(255,106,0,0.5)] uppercase tracking-widest block mb-2">Описание проблемы</label>
                   <textarea className="cyber-input resize-none h-24" placeholder="Не заряжается / не едет / стучит..."
                     value={formData.problem} onChange={e => setFormData(p => ({ ...p, problem: e.target.value }))} />
                 </div>
@@ -405,8 +405,8 @@ export default function Index() {
       <section id="contacts" className="py-24 bg-[#040a0d]">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center gap-4 mb-4">
-            <div className="h-px w-8 bg-[#00ffff]" />
-            <span className="mono text-xs text-[#00ffff] tracking-widest uppercase">Как нас найти</span>
+            <div className="h-px w-8 bg-[#ff6a00]" />
+            <span className="mono text-xs text-[#ff6a00] tracking-widest uppercase">Как нас найти</span>
           </div>
           <h2 className="section-title text-white mb-10">
             Конт<span className="neon-text">акты</span>
@@ -419,11 +419,11 @@ export default function Index() {
               { icon: "Mail", title: "Email", value: "info@voltfix.ru", sub: "Ответим в течение часа" },
             ].map(c => (
               <div key={c.icon} className="card-cyber p-6 flex items-start gap-4">
-                <div className="w-10 h-10 border border-[rgba(0,255,255,0.3)] flex items-center justify-center flex-shrink-0">
-                  <Icon name={c.icon} size={18} className="text-[#00ffff]" />
+                <div className="w-10 h-10 border border-[rgba(255,106,0,0.3)] flex items-center justify-center flex-shrink-0">
+                  <Icon name={c.icon} size={18} className="text-[#ff6a00]" />
                 </div>
                 <div>
-                  <div className="mono text-xs text-[rgba(0,255,255,0.4)] uppercase tracking-widest mb-1">{c.title}</div>
+                  <div className="mono text-xs text-[rgba(255,106,0,0.4)] uppercase tracking-widest mb-1">{c.title}</div>
                   <div className="font-oswald text-white font-medium text-lg">{c.value}</div>
                   <div className="text-[rgba(224,255,255,0.45)] text-xs mt-1">{c.sub}</div>
                 </div>
@@ -432,8 +432,8 @@ export default function Index() {
           </div>
 
           <div className="relative neon-border overflow-hidden" style={{ height: 400 }}>
-            <div className="absolute top-0 left-0 w-12 h-12 border-t-2 border-l-2 border-[#00ffff] z-10" />
-            <div className="absolute bottom-0 right-0 w-12 h-12 border-b-2 border-r-2 border-[#00ffff] z-10" />
+            <div className="absolute top-0 left-0 w-12 h-12 border-t-2 border-l-2 border-[#ff6a00] z-10" />
+            <div className="absolute bottom-0 right-0 w-12 h-12 border-b-2 border-r-2 border-[#ff6a00] z-10" />
             <iframe
               src="https://yandex.ru/map-widget/v1/?text=%D0%9A%D0%B0%D0%BB%D1%83%D0%B3%D0%B0%2C+%D1%83%D0%BB.+%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+338%D0%B0&z=16&l=map"
               width="100%"
@@ -448,11 +448,11 @@ export default function Index() {
       </section>
 
       {/* FOOTER */}
-      <footer className="border-t border-[rgba(0,255,255,0.1)] py-10 bg-[#060c0f]">
+      <footer className="border-t border-[rgba(255,106,0,0.1)] py-10 bg-[#060c0f]">
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
-            <div className="w-7 h-7 border border-[#00ffff] flex items-center justify-center">
-              <Icon name="Zap" size={14} className="text-[#00ffff]" />
+            <div className="w-7 h-7 border border-[#ff6a00] flex items-center justify-center">
+              <Icon name="Zap" size={14} className="text-[#ff6a00]" />
             </div>
             <span className="font-oswald font-bold text-lg tracking-widest text-white">
               KALUGA<span className="neon-text">KUGOO</span>
@@ -462,13 +462,13 @@ export default function Index() {
           <div className="flex flex-wrap gap-6 justify-center">
             {NAV_LINKS.map(l => (
               <button key={l.href} onClick={() => handleScroll(l.href)}
-                className="mono text-xs text-[rgba(0,255,255,0.4)] hover:text-[#00ffff] uppercase tracking-widest transition-colors">
+                className="mono text-xs text-[rgba(255,106,0,0.4)] hover:text-[#ff6a00] uppercase tracking-widest transition-colors">
                 {l.label}
               </button>
             ))}
           </div>
 
-          <span className="mono text-xs text-[rgba(0,255,255,0.25)]">
+          <span className="mono text-xs text-[rgba(255,106,0,0.25)]">
             © 2025 KALUGAKUGOO. Все права защищены.
           </span>
         </div>
