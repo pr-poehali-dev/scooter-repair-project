@@ -357,7 +357,7 @@ export default function Index() {
 
               <div className="space-y-3">
                 {[
-                  { icon: "Phone", text: "+7 (999) 123-45-67" },
+                  { icon: "Phone", text: "+7 (953) 333-40-04" },
                   { icon: "MessageCircle", text: "Написать в WhatsApp" },
                   { icon: "MapPin", text: "ул. Электрическая, 42, Москва" },
                   { icon: "Clock", text: "Ежедневно с 9:00 до 21:00" },
@@ -415,7 +415,7 @@ export default function Index() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-10">
             {[
               { icon: "MapPin", title: "Адрес", value: "ул. Электрическая, 42", sub: "Москва, ТЦ «Техноград», 2 этаж" },
-              { icon: "Phone", title: "Телефон", value: "+7 (999) 123-45-67", sub: "Ежедневно 9:00–21:00" },
+              { icon: "Phone", title: "Телефон", value: "+7 (953) 333-40-04", sub: "Ежедневно 9:00–21:00" },
               { icon: "Mail", title: "Email", value: "info@voltfix.ru", sub: "Ответим в течение часа" },
             ].map(c => (
               <div key={c.icon} className="card-cyber p-6 flex items-start gap-4">
