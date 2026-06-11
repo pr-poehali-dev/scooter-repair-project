@@ -69,7 +69,7 @@ export default function Index() {
               <Icon name="Zap" size={16} className="text-[#00ffff]" />
             </div>
             <span className="font-oswald font-bold text-xl tracking-widest text-white">
-              VOLT<span className="neon-text">FIX</span>
+              KALUGA<span className="neon-text">KUGOO</span>
             </span>
           </div>
 
@@ -264,7 +264,7 @@ export default function Index() {
                 Кто <span className="neon-text">мы</span>
               </h2>
               <p className="text-[rgba(224,255,255,0.65)] leading-relaxed mb-6">
-                VOLTFIX — специализированный сервис по ремонту электросамокатов с 2020 года.
+                KALUGAKUGOO — специализированный сервис по ремонту электросамокатов с 2020 года.
                 Мы работаем со всеми брендами: Xiaomi, Ninebot, Kugoo, Inokim, Kaabo и другими.
               </p>
               <p className="text-[rgba(224,255,255,0.65)] leading-relaxed mb-10">
@@ -455,7 +455,7 @@ export default function Index() {
               <Icon name="Zap" size={14} className="text-[#00ffff]" />
             </div>
             <span className="font-oswald font-bold text-lg tracking-widest text-white">
-              VOLT<span className="neon-text">FIX</span>
+              KALUGA<span className="neon-text">KUGOO</span>
             </span>
           </div>
 
@@ -469,7 +469,7 @@ export default function Index() {
           </div>
 
           <span className="mono text-xs text-[rgba(0,255,255,0.25)]">
-            © 2025 VOLTFIX. Все права защищены.
+            © 2025 KALUGAKUGOO. Все права защищены.
           </span>
         </div>
       </footer>
